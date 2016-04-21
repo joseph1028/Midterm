@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js" ></script>
+		<script src="js/ejs_production.js"></script>
+
+	</head>
+
+	<body>
+
+
+
+
+	<div class="header">
+		Cash Book 我到底吃了多少？
+	</div>
+
+
+	<div id="empty">
+	</div>
+
+		<div class="content">
+
+					<div id="usernew">
+						<%- include('form'); %>
+					</div>
+
+		</div>
+
+		<div id="empty">
+		</div>
+
+		<div id="mider">
+		</div>
+
+		<div id="empty">
+		</div>
+
+		<div id="info">
+
+
+			<div id=line>
+				<h3>支出列表</h3>
+					<div id="scollbar">
+
+						<div id="userinfo">
+						<%- include('persons'); %>
+						</div>
+
+					</div>
+			</div>
+
+
+			<div id="box">
+
+				<div id="userupdate"></div>
+				<script src="js/script.js"></script>
+
+
+			</div>
+
+		</div>
+
+		<div id="empty">
+		</div>
+
+
+		<div id="footer">
+		</div>
+
+
+	</body>
+</html>

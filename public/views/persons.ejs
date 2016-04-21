@@ -1,0 +1,20 @@
+
+<% if (userinfos.length) { %>
+  <ul>
+    <% userinfos.forEach(function(userinfo){ %>
+
+        <div id="namebox">
+
+          <a href="" class='read' rel=<%= userinfo['_id']%>>
+            <%= userinfo['firstname'] %>
+          </a>
+          <br>
+          <a href="" class='delete' rel=<%= userinfo['_id']%>><img src="css/image/delete.png" border="0"></a>
+          <nbsp>
+          <a href="" class='update' rel=<%= userinfo['_id']%>><img src="css/image/edit.png" border="0"></a>
+
+        </div>
+
+    <% }) %>
+  </ul>
+<% } %>
